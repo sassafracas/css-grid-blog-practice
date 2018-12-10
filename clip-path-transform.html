@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clip-Path & Transform</title>
+</head>
+<body>
+
+    <div class="background">
+    </div>
+
+    <div class="text-box">
+        <h1>Orange Egg</h1>
+    </div>
+
+    <style>
+        
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .background {
+            height: 100vh;
+            background-image: linear-gradient(to bottom, peru, orangered );
+            clip-path: ellipse(30% 50% at 50% 50%);
+        }
+
+        .text-box {
+            color: #FFF;
+            letter-spacing: 0.5em;
+            font-family: sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</body>
+</html>
